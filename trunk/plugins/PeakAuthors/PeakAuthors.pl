@@ -1,5 +1,17 @@
 # ===========================================================================
-# Copyright 2006, Everitz Consulting (mt@everitz.com)
+# A Movable Type plugin to select entries by authors over recent days.
+# Copyright 2006 Everitz Consulting <everitz.com>.
+#
+# This program is free software:  You may redistribute it and/or modify it
+# it under the terms of the Artistic License version 2 as published by the
+# Open Source Initiative.
+#
+# This program is distributed in the hope that it will be useful but does
+# NOT INCLUDE ANY WARRANTY; Without even the implied warranty of FITNESS
+# FOR A PARTICULAR PURPOSE.
+#
+# You should have received a copy of the Artistic License with this program.
+# If not, see <http://www.opensource.org/licenses/artistic-license-2.0.php>.
 # ===========================================================================
 package MT::Plugin::PeakAuthors;
 
@@ -11,13 +23,13 @@ use MT::Util qw(offset_time_list);
 
 # version
 use vars qw($VERSION);
-$VERSION = '1.0.0';
+$VERSION = '1.0.1';
 
 my $about = {
   name => 'MT-PeakAuthors',
-  description => 'Provides enhanced entry handling options.',
+  description => 'Select entries by authors over recent days.',
   author_name => 'Everitz Consulting',
-  author_link => 'http://www.everitz.com/',
+  author_link => 'http://everitz.com/',
   version => $VERSION,
 };
 MT->add_plugin(new MT::Plugin($about));
